@@ -1,0 +1,39 @@
+.oplata {
+  background: url(../img/oplata/oplata.jpg) no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.btn-bepaid,
+.btn-cloudpayment {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  font-size: 2rem;
+  color: var(--white);
+  background: var(--main-color);
+  cursor: pointer;
+}
+
+.btn-bepaid:hover,
+.btn-cloudpayment:hover {
+  letter-spacing: 0.2rem;
+}
+
+.modal-cloudpayment {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(241, 240, 240, 0.9);
+  padding: 50px;
+}
+
+.modal-content h1,
+.modal-content h4,
+.modal-content p {
+  padding-bottom: 10px;
+}

@@ -1,0 +1,31 @@
+.open-btn-pil,
+.open-btn-chistka,
+.open-btn-vek,
+.open-btn-arms,
+.open-btn-legs,
+.open-btn-bikini,
+.open-btn-woman,
+.open-btn-man,
+.open-btn-color,
+.open-btn-eur,
+.open-btn-french,
+.open-btn-extension,
+.open-btn-hardware,
+.open-btn-classical,
+.open-btn-combined,
+.open-btn-spa,
+.open-btn-sauna,
+.open-btn-massag {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  font-size: 2rem;
+  color: var(--white);
+  background: var(--main-color);
+  cursor: pointer;
+}
+.koplate {
+  display: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+}

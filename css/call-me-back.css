@@ -1,0 +1,25 @@
+.call-me-back .row {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.call-me-back .row form {
+  padding: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.call-me-back .row form .input-box input {
+  width: 100%;
+}
+
+.call-me-back .row form .input-box input {
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  margin: 0.7rem 0;
+}

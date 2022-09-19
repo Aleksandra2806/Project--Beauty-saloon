@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата</title>
+    <script src="https://kit.fontawesome.com/658038229a.js" crossorigin="anonymous"></script>
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
+    <script defer type="text/javascript" src="https://checkout.bepaid.by/widget/be_gateway.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/oplata.css">
+    <link rel="stylesheet" href="../css/forma.css">
+    <link href="../img/logo.png" rel="icon" />
+  </head>
+  <body>
+    <!-- хедер -->
+  <header class="header">
+    <a href="#" class="logo">
+        <img src="../img/logo.png" alt="logo" title="logo">
+    </a>
+    <nav class="navbar">
+        <a href="../index.html#home" alt="главная" title="главная">Главная</a>
+        <a href="../index.html#about" alt="о нас" title="о нас">О нас</a>
+        <div class="dropdown">
+          <a class="dropbtn" href="../index.html#menu" alt="услуги" title="услуги">Услуги</a>
+          <div class="dropdown-content">
+            <a href="./haircut.html">Парикмахерские услуги</a>
+            <a href="./spa.html">СПА-процедуры и массаж</a>
+            <a href="./cosmetics.html">Косметические услуги</a>
+            <a href="./manicure.html">Маникюр.Наращивание ногтей</a>
+            <a href="./pedicure.html">Педикюр</a>
+            <a href="./depilation.html">Депиляция</a>
+          </div>
+        </div>
+        <a href="../index.html#review" alt="отзывы" title="отзывы">Отзывы</a>
+        <a href="../index.html#contact" alt="контакты" title="контакты">Контакты</a>
+    </nav>
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+    </div>
+    <button class="nav-mobile" id="nav__mobile" type="button">
+      <span class="av-mobile-item"></span>
+    </button> 
+    <!-- поиск -->
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="поиск...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+  </header>
+  <!-- главная страница -->
+  <section class="home oplata" id="home">
+    <div class="content">
+        <h3>Выберите вариант оплаты</h3>
+        <form action="https://securesandbox.webpay.by/" method="post">
+            <input type="hidden" name="*scart">
+            <input type="hidden" name="wsb_version" value="2">
+            <input type="hidden" name="wsb_language_id" value="russian">
+            <input type="hidden" name="wsb_storeid" value="424970568">
+            <input type="hidden" name="wsb_store" value="Салон красоты">
+            <input type="hidden" name="wsb_order_num" value="ORDER-12345678">
+            <input type="hidden" name="wsb_test" value="0">
+            <input type="hidden" name="wsb_currency_id" value="BYN">
+            <input type="hidden" name="wsb_seed" value="1242649174">
+            <input type="hidden" name="wsb_invoice_item_name[0]" value="Услуги спа">
+            <input type="hidden" name="wsb_invoice_item_quantity[0]" value="1">
+            <input type="hidden" name="wsb_invoice_item_price[0]" value="40">
+            <input type="hidden" name="wsb_total" value="40">
+            <input type="hidden" name="wsb_signature" value="266e9c04a24dfb5fc75775c42a831a49488f8303">
+            <input type="hidden" name="wsb_order_contract" value="Договор №152/12-1 от 12.01.19">
+            <input type="submit" class="btn" alt="услуги" title="услуги" value="webpay">
+          </form>
+        <a href="#menu" class="btn-cloudpayment" alt="услуги" title="услуги" id="btncloudpayment">cloudpayment</a>
+        <a href="#menu" class="btn-bepaid" id="btnbepaid" alt="услуги" title="услуги">bepaid</a>
+    </div>
+  </section>
+  <section>
+    <div id="modal-cloudpayment" class="modal-cloudpayment">
+      <form class="modal-content">
+        <h1 class="online-form">Оплатить с помощью cloudpayment</h1> 
+        <h4>Введите ваше имя и фамилию в форму ниже. Нажмите оплатить. Введите данные вашей карты и ОБЯЗАТЕЛЬНО адрес электронной почты. На почту придет чек об успешной оплате.<br> Предъявите его администратору в салоне.</h4>
+        <p>Также вы можете выбрать оплату с помощью Google Pay или Yandex Pay.</p>
+        <input class="modal-input" type="text" id="first" name="first" aria-label="First" placeholder="Введите имя">
+        <input class="modal-input" type="text" id="last" name="last" aria-label="Last" placeholder="Введите фамилию">
+        <a href="#menu" class="btn" alt="услуги" title="услуги" id="cloudpayment">Оплатить</a>
+        <button class="btn" id="btncloudpaymentClose">Закрыть</button>
+      </form>
+    </div>
+  </section>
+  <section>
+    <div id="modal-id" class="modal">
+      <form class="modal-content">
+        <h1 class="online-form">Оплатить с помощью bepaid</h1> 
+        <h4>Введите ваше имя и фамилию в форму ниже. Нажмите оплатить. Введите данные вашей карты и ОБЯЗАТЕЛЬНО после успешной оплаты скачайте чек нажав на кнопку "Скачать PDF".<br> Предъявите его администратору в салоне.</h4>
+        <input class="modal-input" type="text" id="firstName" name="firstName" aria-label="First name" placeholder="Введите имя">
+        <input class="modal-input" type="text" id="lastName" name="lastName" aria-label="Last name" placeholder="Введите фамилию">
+        <a onclick="payment()" href="#" class="btn">Оплатить</a>
+        <button class="btn" id="btnBePaidClose">Закрыть</button>
+      </form>
+    </div>
+  </section>
+  <!-- футер -->
+  <section class="footer" id="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Наши филиалы</h3>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Минск</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Витебск</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Гродно</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Могилев</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Брест</a>
+        </div>
+        <div class="box">
+            <h3>Меню</h3>
+            <a href="../index.html#home" alt="главная" title="главная"> <i class="fas fa-arrow-right"></i>Главная</a>
+            <a href="../index.html#about" alt="о нас" title="о нас"> <i class="fas fa-arrow-right"></i>О нас</a>
+            <a href="../index.html#menu" alt="услуги" title="услуги"> <i class="fas fa-arrow-right"></i>Услуги</a>
+            <a href="../index.html#review" alt="отзывы" title="отзывы"> <i class="fas fa-arrow-right"></i>Отзывы</a>
+            <a href="../index.html#contact" alt="контакты" title="контакты"> <i class="fas fa-arrow-right"></i>Контакты</a>
+        </div>
+        <div class="box">
+            <h3>Контакты</h3>
+            <a href="tel:+1234567890"> <i class="fas fa-phone"></i>+123-456-7890</a>
+            <a href="tel:+1112223333"> <i class="fas fa-phone"></i>+111-222-3333</a>
+            <a href="mailto:ask@salon.by"><i class="fas fa-envelope"></i>ask@salon.by</a>
+            <a href="./index.html#contact"> <i class="fas fa-map-marker-alt"></i>Беларусь, Гомель, Жарковского, 6а</a>
+        </div>
+        <div class="box">
+            <h3>Социальные сети</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"><i class="fab fa-vk" alt="vk" title="vk"></i>vk</a>
+        </div>
+    </div>
+    <div class="bottom">
+      <p>&copy; All rights reserved.<span>Made with</span>by Web Studio</p>
+    </div>
+  </section>
+  <script src="../js/app.js" defer></script>
+  <script src="../js/oplata.js" defer></script>
+  <script src="../js/spa-cloudpayments.js" defer></script>
+  <script src="../js/spa-bepaid.js" defer></script>
+  </body>
+</html>

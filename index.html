@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салон красоты</title>
+    <script src="https://kit.fontawesome.com/658038229a.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="./img/logo.png" rel="icon" />
+  </head>
+  <body>
+    <!-- хедер -->
+  <header class="header">
+    <a href="#" class="logo">
+        <img src="./img/logo.png" alt="logo" title="logo">
+    </a>
+    <nav class="navbar">
+        <a href="#home" alt="главная" title="главная">Главная</a>
+        <a href="#about" alt="о нас" title="о нас">О нас</a>
+        <div class="dropdown">
+          <a class="dropbtn" href="#menu" alt="услуги" title="услуги">Услуги</a>
+          <div class="dropdown-content">
+            <a class="nav-link" href="./page/haircut.html">Парикмахерские услуги</a>
+            <a class="nav-link" href="./page/spa.html">СПА-процедуры и массаж</a>
+            <a class="nav-link" href="./page/cosmetics.html">Косметические услуги</a>
+            <a class="nav-link" href="./page/manicure.html">Маникюр.Наращивание ногтей</a>
+            <a class="nav-link" href="./page/pedicure.html">Педикюр</a>
+            <a class="nav-link" href="./page/depilation.html">Депиляция</a>
+          </div>
+        </div>
+        <a href="#review" alt="отзывы" title="отзывы">Отзывы</a>
+        <a href="#contact" alt="контакты" title="контакты">Контакты</a>
+    </nav>
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+    </div>
+    <button class="nav-mobile" id="nav__mobile" type="button">
+      <span class="nav-mobile-item"></span>
+    </button>  
+    <!-- поиск -->
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="поиск...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+  </header>
+  <!-- главная страница -->
+  <section class="home" id="home">
+    <div class="content">
+        <h3>Салон красоты премиум класса</h3>
+        <p>Для того чтобы ЗАПИСАТЬСЯ нажмите на кнопку</p>
+        <a href="#menu" class="btn" alt="услуги" title="услуги">ПЕРЕЙТИ К УСЛУГАМ</a>
+    </div>
+  </section>
+  <!-- о нас -->
+  <section class="about" id="about">
+    <h1 class="heading"><span>О </span>нас</h1>
+    <div class="row">
+        <div class="image">
+            <img src="./img/salon.jpg" alt="салон" title="салон">
+        </div>
+        <div class="content">
+            <h3>Салон красоты премиум класса</h3>
+            <p>Команда профессиональных мастеров, которые имеют за своими плечами огромный опыт работы в области красоты и здоровья.</p>
+            <p>Мы любим свою работу и вкладываем в наши творения душу. Выбирайте наш салон, он Вас приятно удивит.</p>
+            <p>На базе салона был открыт образовательный центр, специализирующийся на подготовке специалистов по эстетической косметологии, массажу, маникюру и педикюру.</p>
+            <a href="#menu" class="btn" alt="услуги" title="услуги">Наши услуги</a>
+        </div>
+    </div>
+  </section>
+  <!-- статистика -->
+  <section>
+    <div class="number-wrap">
+        <div class="item">
+          <p>лет<br> на рынке</p>
+          <div class="number" data-max="10">0</div>
+        </div>
+        <div class="item">
+          <p>клиентов салона</p>
+          <div class="number1" data-max="500">350</div>
+        </div>
+          <div class="item">
+            <p>довольных клиентов</p>
+           <div class="number2" data-max="500">350</div>
+        </div>
+          <div class="item">
+          <p>успешных заказов</p>
+           <div class="number3" data-max="500">350</div>
+        </div>
+        <div class="item">
+            <p>профессионалов отрасли</p>
+            <div class="number4" data-max="27">0</div>
+        </div>
+        <div class="item">
+          <p>клиентов за день</p>
+          <div class="number5" data-max="50">2</div>
+        </div>
+    </div> 
+  </section>
+  <!-- услуги -->
+  <section class="menu" id="menu">
+    <h1 class="heading">выберите <span>услугу</span> </h1>
+    <div class="box-container">
+        <div class="box">
+          <img src="./img/strigka.jpg" alt="стрижка" title="стрижка">
+          <h3>Парикмахерские услуги</h3>
+          <a href="./page/haircut.html" class="btn">Записаться</a>
+        </div>
+        <div class="box">
+          <img src="./img/masag.jpg" alt="массаж тела" title="массаж тела">
+          <h3>СПА-процедуры и массаж</h3>
+          <a href="./page/spa.html" class="btn">Записаться</a>
+        </div>
+        <div class="box">
+          <img src="./img/bb-glow.jpg" alt="bb-glow" title="bb-glow">
+          <h3>Косметические услуги</h3>
+          <a href="./page/cosmetics.html" class="btn">Записаться</a>
+        </div>
+        <div class="box">
+            <img src="./img/nogti.jpg" alt="маникюр" title="маникюр">
+            <h3>Маникюр.Наращивание ногтей</h3>
+            <a href="./page/manicure.html" class="btn">Записаться</a>
+        </div>
+        <div class="box">
+            <img src="./img/nogti2.jpg" alt="педикюр" title="педикюр">
+            <h3>Педикюр</h3>
+            <a href="./page/pedicure.html" class="btn">Записаться</a>
+        </div>
+        <div class="box">
+            <img src="./img/dep.jpg" alt="депиляция" title="депиляция">
+            <h3>Депиляция</h3>
+            <a href="./page/depilation.html" class="btn">Записаться</a>
+        </div>
+    </div>
+  </section>
+  <!-- отзывы -->
+  <section class="review" id="review">
+    <h1 class="heading">отз<span>ывы</span> </h1>
+    <div class="box-container">
+        <div class="box">
+            <p>Классное расположение, сервис.<br> Да и просто приятно быть в красивом месте. Спасибо администратору, оставила время с запасом (у меня был сложный случай, на мой взгляд)<br>Девушка парикмахер справилась идеально!</p>
+            <img src="./img/pic-1.jpg" class="user" alt="отзывы" title="отзывы">
+            <h3>Екатерина</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        <div class="box">
+            <p>Хочу выразить благодарность мастеру Анастасии! Внимательно отнеслась ко всем моим пожеланиям относительно выбора цвета для волос. Осталась очень довольна результатом!!!<br> Теперь я Ваша постоянная клиентка. Спасибо.</p>
+            <img src="./img/pic-2.jpg" class="user" alt="отзывы" title="отзывы">
+            <h3>Мария</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        <div class="box">
+            <p>Была у двух мастеров по акции на чистках. Понравилось, сделано все было аккуратно, и главное скурпулезно. Гнойных образований, что очень показательно ,практически не было. Мастера внимательные и приятные. Советую.</p>
+            <img src="./img/pic-3.jpg" class="user" alt="отзывы" title="отзывы">
+            <h3>Дарья</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        <div class="box">
+          <p>Сделала уже несколько процедур у косметолога Марии. Очень понравилось - результат виден сразу. Действительно очень хороший комплексный уход за лицом с использованием качественной косметики.</p>
+          <img src="./img/pic-4.jpg" class="user" alt="отзывы" title="отзывы">
+          <h3>Анастасии</h3>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- розыгрыш -->
+  <section class="about">
+    <div class="row">
+        <div class="image">
+          <img src="./img/roz.jpg" alt="roz" />
+        </div>
+    <div class="content">
+        <h3>До следующего розыгрыша</h3>
+        <h3>Успей!!</h2>
+        <p>Лучший способ привлекать внимание — выглядеть красиво всегда и везде. Салон красоты поможет вам в этом! Тем более сейчас, когда действует розыгрыш призов!</p>
+        <h3>Условия розыгрыша:</h3>
+        <p>Написать отзыв об оказанной услуге и отправить через наш сайт.</p>
+        <h3>Призы:</h3>
+        <p>1 место — Биоревитализация лица препаратом NCTF + скидка 80% на следующую процедуру.</p>
+        <p>2 место — УЗ-чистка на косметики «Кристина» + 50% на следующую процедуру.</p>
+        <p>3 место — Гликолевый пилинг + 30% на следующую процедуру.</p>
+        <h4>Будут подведены итоги с помощью генератора призов и опубликованы на нашем сайте!</h4>
+        <div class="countdown">
+          <div class="countdown-item">
+            <h4 class="days">10</h4>
+            <span>дни</span>
+          </div>
+          <div class="countdown-item">
+            <h4 class="hours">06</h4>
+            <span>часы</span>
+          </div>
+          <div class="countdown-item">
+            <h4 class="minutes">11</h4>
+            <span>минуты</span>
+          </div>
+          <div class="countdown-item">
+            <h4 class="seconds">49</h4>
+            <span>секунды</span>
+          </div>
+        </div>
+    </div>
+  </section>
+<!-- контакты -->
+  <section class="contact" id="contact">
+    <h1 class="heading"> <span>Конта</span>кты</h1>
+    <div class="icons-container">
+      <div class="icons">
+        <img src="./img/map.png"></img>        
+        <h3>Адрес</h3>
+        <p>Беларусь, Гомель, Жарковского, 6а</p>
+      </div>
+      <div class="icons">
+          <img src="./img/email.png"></img>  
+          <h3>Email</h3>
+          <a href="mailto:ask@salon.by">ask@salon.by</a>
+          <a href="mailto:help@salon.by">help@salon.by</a>
+      </div>
+      <div class="icons">
+        <img src="./img/telefona.png"></img>  
+          <h3>Телефон</h3>
+          <a href="tel:+1234567890">+123-456-7890</a>
+          <a href="tel:+1112223333">+111-222-3333</a>
+      </div>
+    </div>
+    <div class="row">
+      <form action="">
+          <h3>Оставить отзыв</h3>
+          <div class="inputBox">
+              <input type="text" placeholder="Имя" id="reviewname" name="reviewname" required>
+              <input type="email" placeholder="Email" id="reviewemail" name="reviewemail" required>
+          </div>
+          <div class="inputBox">
+              <input type="number" placeholder="Телефон" id="reviewtelephone" name="reviewtelephone" required>
+              <input type="text" placeholder="Услуга" id="reviewservice" name="reviewservice" required>
+          </div>
+          <div class="inputBox">
+              <input type="text" placeholder="Ваш отзыв" id="reviewRev" name="reviewRev" required></input>
+          </div>
+          <button class="btn" type="button" id="submitreview" name="submitreview">Отправить</button>
+      </form>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5998.573127627306!2d31.00339696873513!3d52.430915547056195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d469ab340e1c01%3A0xe7edcf7038266704!2z0YPQuy4g0JbQsNGA0LrQvtCy0YHQutC-0LPQviA20LAsINCT0L7QvNC10LvRjCAyNDYwNTA!5e0!3m2!1sru!2sby!4v1647855799358!5m2!1sru!2sby"allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+  <!-- футер -->
+  <section class="footer" id="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Наши филиалы</h3>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Минск</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Витебск</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Гродно</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Могилев</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Брест</a>
+        </div>
+        <div class="box">
+            <h3>Меню</h3>
+            <a href="#home" alt="главная" title="главная"> <i class="fas fa-arrow-right"></i>Главная</a>
+            <a href="#about" alt="о нас" title="о нас"> <i class="fas fa-arrow-right"></i>О нас</a>
+            <a href="#menu" alt="услуги" title="услуги"> <i class="fas fa-arrow-right"></i>Услуги</a>
+            <a href="#review" alt="отзывы" title="отзывы"> <i class="fas fa-arrow-right"></i>Отзывы</a>
+            <a href="#contact" alt="контакты" title="контакты"> <i class="fas fa-arrow-right"></i>Контакты</a>
+        </div>
+        <div class="box">
+            <h3>Контакты</h3>
+            <a href="tel:+1234567890"> <i class="fas fa-phone"></i>+123-456-7890</a>
+            <a href="tel:+1112223333"> <i class="fas fa-phone"></i>+111-222-3333</a>
+            <a href="mailto:ask@salon.by"><i class="fas fa-envelope"></i>ask@salon.by</a>
+            <a href="#contact"> <i class="fas fa-map-marker-alt"></i>Беларусь, Гомель, Жарковского, 6а</a>
+        </div>
+        <div class="box">
+            <h3>Социальные сети</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"><i class="fab fa-vk" alt="vk" title="vk"></i>vk</a>
+        </div>
+    </div>
+    <div class="bottom">
+      <p>&copy; All rights reserved.<span>Made with</span>by Web Studio</p>
+    </div>
+  </section>
+  <script src="./js/app.js" defer></script>
+  <script type="module" src="./js/firebase-review.js" defer></script>
+  </body>
+</html>
