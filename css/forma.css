@@ -1,0 +1,148 @@
+/*modal-form*/
+
+.modal,
+.modal-oplana {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(241, 240, 240, 0.9);
+  padding: 50px;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 0 auto;
+  border: 1px solid #888;
+  width: 42%;
+  padding: 30px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.online-form {
+  color: var(--main-color);
+  font-weight: 700;
+}
+.modal-input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.cancel-btn,
+.online-btn,
+.online-btn-opl {
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  color: #fff;
+  width: 50%;
+  border: solid 2px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.online-btn:hover,
+.cancel-btn:hover,
+.online-btn-opl:hover {
+  color: var(--black);
+}
+
+.online-opl {
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  color: #fff;
+  width: 100%;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.clearfix {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* calendar */
+.calendar {
+  margin-top: 10px;
+}
+.calendar input {
+  padding: 10px;
+  font-size: 2rem;
+}
+input[type="date"] {
+  position: relative;
+  margin-left: 19px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  z-index: 1;
+}
+input[type="date"]:before,
+input[type="time"]:before {
+  color: transparent;
+  background: none;
+  display: block;
+  font-family: "FontAwesome";
+  content: "\f073";
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  top: 12px;
+  right: 30px;
+  color: var(--main-color);
+  font-weight: 400;
+}
+input[type="time"] {
+  position: relative;
+}
+
+input[type="time"]:before {
+  content: "\f017";
+  right: 20px;
+}
+
+@media (max-width: 880px) {
+  .modal-content {
+    width: 52%;
+  }
+}
+
+@media (max-width: 730px) {
+  .modal-content {
+    width: 62%;
+  }
+}
+
+@media (max-width: 574px) {
+  .modal-content {
+    width: 82%;
+  }
+}
+
+@media (max-width: 465px) {
+  .modal-content {
+    width: 92%;
+  }
+}
+
+@media (max-width: 410px) {
+  .modal-content {
+    width: 100%;
+  }
+  .calendar input {
+    display: block;
+    margin: 0 auto;
+  }
+}

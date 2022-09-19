@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Парикмахерские услуги</title>
+    <script src="https://kit.fontawesome.com/658038229a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/forma.css">
+    <link rel="stylesheet" href="../css/call-me-back.css">
+    <link rel="stylesheet" href="../css/haircut.css">
+    <link rel="stylesheet" href="../css/koplate.css">
+    <link href="../img/logo.png" rel="icon" />
+  </head>
+  <body>
+    <!-- хедер -->
+  <header class="header">
+    <a href="#" class="logo">
+        <img src="../img/logo.png" alt="logo" title="logo">
+    </a>
+    <nav class="navbar">
+        <a href="../index.html#home" alt="главная" title="главная">Главная</a>
+        <a href="../index.html#about" alt="о нас" title="о нас">О нас</a>
+        <div class="dropdown">
+          <a class="dropbtn" href="../index.html#menu" alt="услуги" title="услуги">Услуги</a>
+          <div class="dropdown-content">
+            <a href="./haircut.html">Парикмахерские услуги</a>
+            <a href="./spa.html">СПА-процедуры и массаж</a>
+            <a href="./cosmetics.html">Косметические услуги</a>
+            <a href="./manicure.html">Маникюр.Наращивание ногтей</a>
+            <a href="./pedicure.html">Педикюр</a>
+            <a href="./depilation.html">Депиляция</a>
+          </div>
+        </div>
+        <a href="../index.html#review" alt="отзывы" title="отзывы">Отзывы</a>
+        <a href="../index.html#contact" alt="контакты" title="контакты">Контакты</a>
+    </nav>
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+    </div>
+    <button class="nav-mobile" id="nav__mobile" type="button">
+      <span class="nav-mobile-item"></span>
+    </button> 
+    <!-- поиск -->
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="поиск...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+  </header>
+  <!-- главная страница -->
+  <section class="home haircut" id="home">
+    <div class="content">
+        <h3>Парикмахерские услуги</h3>
+        <p>Для того чтобы ЗАПИСАТЬСЯ нажмите на кнопку</p>
+        <a href="#menu" class="btn" alt="услуги" title="услуги">ПЕРЕЙТИ К УСЛУГАМ</a>
+    </div>
+  </section>
+  <!-- breadcrumb -->
+  <section>
+    <ul class="breadcrumb">
+      <li><a href="../index.html">Главная</a></li>
+      <li>Парикмахерские услуги</li>
+    </ul>
+  </section>
+  <!-- услуги -->
+  <section class="about" id="about">
+    <div class="row">
+        <div class="image">
+            <img src="../img/haircut/parikmaherskaya.jpg" alt="салон" title="салон">
+        </div>
+        <div class="content">
+            <p>Парикмахерские услуги – это уход за волосами путем их окрашивания, стрижки, укладки или наращивания для удовлетворения потребностей клиента и придания его внешнему виду свежести, ухоженности и красоты. </p>
+            <p>Технология парикмахерских услуг – это целое искусство, плодами которого становятся удивительные образы. </p>
+            <p>Профессиональный парикмахер постоянно растет, совершенствуя свои навыки и знания, посещая конкурсы и тренинги. Действительно хороший парикмахер всегда посоветует своему клиенту, какие коррективы необходимы в его внешнем виде, как он может скрыть недостатки и подчеркнуть достоинства при помощи грамотно подобранного цвета или стрижки.</p>
+            <a href="#menu" class="btn" alt="услуги" title="услуги">Наши услуги</a>
+        </div>
+    </div>
+  </section>
+  <section class="menu" id="menu">
+    <h1 class="heading">выберите <span>услугу</span> </h1>
+    <div id="modal-id" class="modal">
+        <form class="modal-content">
+            <h1 class="online-form">Записаться онлайн</h1>
+            <p>Пожалуйста выберите нужный день и время для записи</p>
+            <hr>
+            <div class="calendar">
+              <div><b>Выберите дату</b></div>
+              <input type="date" id="dataToday" min="2022-09-22">
+              <div><b>Выберите время</b></div>
+              <span>от:</span>
+              <input type="time" id="timeToday">
+              <span>до:</span>
+              <input type="time" id="timeTodayC">
+            </div>
+            <label for="name"><b>Введите имя</b></label>
+            <input class="modal-input" type="text" placeholder="Введите имя" name="name" id="uname">
+            <label for="telephone"><b>Введите номер телефона</b></label>
+            <input class="modal-input" type="number" placeholder="Введите номер телефона" name="number" id="telephone">
+            <label for="name"><b>Ваши пожелания</b></label>
+            <input class="modal-input" type="text" placeholder="Введите комментарий" name="service" id="service">
+            <div class="koplate">К оплате: 50 BYN</div>
+            <div class="clearfix">
+              <button class="online-btn-opl" type="button" id="submitData" name="submitData">Записаться</button>
+              <a class="online-btn" href="../page/oplataheir.html">Оплатить</a>
+              <button class="cancel-btn">Закрыть</button>
+            </div>
+        </form>
+    </div>
+    <div class="box-container">
+        <div class="box">
+          <img src="../img/haircut/womanhearcut.jpg" alt="женская стрижка" title="женская стрижка">
+          <h3>Женская стрижка</h3>
+          <button class="open-btn-woman">Записаться</button>
+        </div>
+        <div class="box">
+            <img src="../img/haircut/manhearcut.jpeg" alt="мужская стрижка" title="мужская стрижка">
+            <h3>Мужская стрижка</h3>
+            <button class="open-btn-man">Записаться</button>
+          </div>
+        <div class="box">
+          <img src="../img/haircut/colorhear.jpg" alt="окрашивание" title="окрашивание">
+          <h3>Окрашивание</h3>
+          <button class="open-btn-color">Записаться</button>
+        </div>
+  </section>
+  <section class="call-me-back" id="callmeback">
+    <p class="heading">Если не удалось записаться - оставьте ваши контактные данные. Мы свяжемся с вами самостоятельно!</з>
+    <div class="row">
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Имя" id="callname" name="callname">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Телефон" id="calltelephone" name="calltelephone">
+            </div>
+            <div class="input-box">
+              <input type="email" placeholder="Email" id="callemail">
+            </div>
+            <button class="btn" type="button" id="submitCall" name="submitcall">Записаться</button>
+        </form>
+    </div>
+  </section>
+  <!-- футер -->
+  <section class="footer" id="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Наши филиалы</h3>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Минск</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Витебск</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Гродно</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Могилев</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Брест</a>
+        </div>
+        <div class="box">
+            <h3>Меню</h3>
+            <a href="../index.html#home" alt="главная" title="главная"> <i class="fas fa-arrow-right"></i>Главная</a>
+            <a href="../index.html#about" alt="о нас" title="о нас"> <i class="fas fa-arrow-right"></i>О нас</a>
+            <a href="../index.html#menu" alt="услуги" title="услуги"> <i class="fas fa-arrow-right"></i>Услуги</a>
+            <a href="../index.html#review" alt="отзывы" title="отзывы"> <i class="fas fa-arrow-right"></i>Отзывы</a>
+            <a href="../index.html#contact" alt="контакты" title="контакты"> <i class="fas fa-arrow-right"></i>Контакты</a>
+        </div>
+        <div class="box">
+            <h3>Контакты</h3>
+            <a href="tel:+1234567890"> <i class="fas fa-phone"></i>+123-456-7890</a>
+            <a href="tel:+1112223333"> <i class="fas fa-phone"></i>+111-222-3333</a>
+            <a href="mailto:ask@salon.by"><i class="fas fa-envelope"></i>ask@salon.by</a>
+            <a href="./index.html#contact"> <i class="fas fa-map-marker-alt"></i>Беларусь, Гомель, Жарковского, 6а</a>
+        </div>
+        <div class="box">
+            <h3>Социальные сети</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"><i class="fab fa-vk" alt="vk" title="vk"></i>vk</a>
+        </div>
+    </div>
+    <div class="bottom">
+      <p>&copy; All rights reserved.<span>Made with</span>by Web Studio</p>
+    </div>
+  </section>
+  <script type="module" src="../js/haircut.js" defer></script>
+  <script src="../js/app.js" defer></script>
+  <script type="module" src="../js/firebase.js" defer></script>
+  <script type="module" src="../js/firebase-callmeback.js" defer></script>
+  </body>
+</html>
